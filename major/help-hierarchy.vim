@@ -1,34 +1,33 @@
 " Call hierarchy
-let g:WhichKeyDesc_Major_Help_CallHierarchy = "<leader>mhc call-hierarchy"
-nnoremap <leader>mhc      :action CallHierarchy<CR>
-vnoremap <leader>mhc      <Esc>:action CallHierarchy<CR>
+let g:WhichKeyDesc_Major_Help_CallHierarchy = "<leader>qc call-hierarchy"
+nnoremap <leader>qc      :action CallHierarchy<CR>
+vnoremap <leader>qc      <Esc>:action CallHierarchy<CR>
 
 " Show implementation
-let g:WhichKeyDesc_Major_Help_ShowImplementation = "<leader>mhH show-implementation"
-nnoremap <leader>mhH      :action QuickImplementations<CR>
-vnoremap <leader>mhH      <Esc>:action QuickImplementations<CR>
+let g:WhichKeyDesc_Major_Help_ShowImplementation = "<leader>qd show-implementation"
+nnoremap <leader>qd      :action QuickImplementations<CR>
+vnoremap <leader>qd      <Esc>:action QuickImplementations<CR>
 
 " Show documetation
-let g:WhichKeyDesc_Major_Help_ShowDocumentation = "<leader>mhh show-documentation"
-nnoremap <leader>mhh      :action QuickJavaDoc<CR>
-vnoremap <leader>mhh      <Esc>:action QuickJavaDoc<CR>
+let g:WhichKeyDesc_Major_Help_ShowDocumentation = "<leader>qh show-documentation"
+nnoremap <leader>qh      :action QuickJavaDoc<CR>
+vnoremap <leader>qh      <Esc>:action QuickJavaDoc<CR>
 
 " Inheritance hierarchy
-let g:WhichKeyDesc_Major_Help_InheritanceHierarchy = "<leader>mhi inheritance-hierarchy"
-nnoremap <leader>mhi      :action TypeHierarchy<CR>
-vnoremap <leader>mhi      <Esc>:action TypeHierarchy<CR>
+let g:WhichKeyDesc_Major_Help_InheritanceHierarchy = "<leader>qi inheritance-hierarchy"
+nnoremap <leader>qi      :action TypeHierarchy<CR>
+vnoremap <leader>qi      <Esc>:action TypeHierarchy<CR>
 
 " Type Definition
-let g:WhichKeyDesc_Major_Help_TypeDefinition = "<leader>mht type-definition"
-nnoremap <leader>mht      :action QuickTypeDefinition<CR>
-vnoremap <leader>mht      :action QuickTypeDefinition<CR>
+let g:WhichKeyDesc_Major_Help_TypeDefinition = "<leader>qq type-definition"
+nnoremap <leader>qq      :action QuickTypeDefinition<CR>
+vnoremap <leader>qq      :action QuickTypeDefinition<CR>
 
 " Show usages for symbol
-let g:WhichKeyDesc_Major_Help_ShowUsages = "<leader>mhU show-usages"
-nnoremap <leader>mhU      :action ShowUsages<CR>
-vnoremap <leader>mhU      :action ShowUsages<CR>
+let g:WhichKeyDesc_Major_Help_ShowUsages = "<leader>qt show-usages"
+nnoremap <leader>qt      :action ShowUsages<CR>
+vnoremap <leader>qt      :action ShowUsages<CR>
 
-" Find usages for symbol
-let g:WhichKeyDesc_Major_Help_FindUsages = "<leader>mhu find-usages"
-nnoremap <leader>mhu      :action FindUsages<CR>
-vnoremap <leader>mhu      :action FindUsages<CR>
+let g:WhichKeyDesc_Major_Help_FindUsages = "<leader>qu find-usages"
+nnoremap <leader>qu      :action FindUsages<CR>
+vnoremap <leader>qu      :action FindUsages<CR>

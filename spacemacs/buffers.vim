@@ -1,8 +1,3 @@
-" Switch among recently opened files
-let g:WhichKeyDesc_Buffers_ListBuffers = "<leader>bb    list-buffers"
-nnoremap <leader>bb    :action RecentFiles<CR>
-vnoremap <leader>bb    :action RecentFiles<CR>
-
 " Close current tab
 let g:WhichKeyDesc_Buffers_KillBuffer = "<leader>bd    kill-buffer"
 nnoremap <leader>bd    :action CloseContent<CR>

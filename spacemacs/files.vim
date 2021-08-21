@@ -1,3 +1,9 @@
+" Reformat whole buffer
+let g:WhichKeyDesc_Files_Reformat= "<leader>f= reformat"
+nnoremap <leader>f=    :action ReformatCode<CR>
+" Reformat selected lines
+vnoremap <leader>f=    :action ReformatCode<CR>
+
 " Show bookmarks.
 " Create bookmark 0 with <C-S-0>, Create bookmark 1 with <C-S-1> and so on.
 " Go to bookmark 0 with <C-0>, go to bookmark 1 with <C-1> and so on.
@@ -14,15 +20,12 @@ nnoremap <leader>fed    :action ShowSettings<CR>
 vnoremap <leader>fed    <Esc>:action ShowSettings<CR>
 
 " Reload .ideavimrc
-let g:WhichKeyDesc_Files_IDE_ReloadIdeaVimRc = "<leader>feR reload-ideavimrc"
-nnoremap <leader>feR    :source ~/.ideavimrc<CR>
-vnoremap <leader>feR    <Esc>:source ~/.ideavimrc<CR>
+let g:WhichKeyDesc_Files_IDE_ReloadIdeaVimRc = "<leader>fer reload-ideavimrc"
+nnoremap <leader>fer    :source ~/.ideavimrc<CR>
+vnoremap <leader>fer    <Esc>:source ~/.ideavimrc<CR>
 """ ---------------------------------------------
 
 " Find files
-let g:WhichKeyDesc_Files_GotoFileAlt = "<leader>fF goto-file"
-nnoremap <leader>fF    :action GotoFile<CR>
-vnoremap <leader>fF    :action GotoFile<CR>
 let g:WhichKeyDesc_Files_GotoFile = "<leader>ff goto-file"
 nnoremap <leader>ff    :action GotoFile<CR>
 vnoremap <leader>ff    :action GotoFile<CR>
@@ -32,8 +35,13 @@ let g:WhichKeyDesc_Files_Rename = "<leader>fR rename"
 nnoremap <leader>fR    :action RenameFile<CR>
 vnoremap <leader>fR    :action RenameFile<CR>
 
-" Recent files
-let g:WhichKeyDesc_Files_Recent = "<leader>fr recent"
+" Recent changed files
+let g:WhichKeyDesc_Files_Recent = "<leader>fc recent"
+nnoremap <leader>fc    :action RecentChangedFiles<CR>
+vnoremap <leader>fc    :action RecentChangedFiles<CR>
+
+" Switch among recently opened files
+let g:WhichKeyDesc_Buffers_ListBuffers = "<leader>fr    list-buffers"
 nnoremap <leader>fr    :action RecentFiles<CR>
 vnoremap <leader>fr    :action RecentFiles<CR>
 
@@ -55,11 +63,19 @@ let g:WhichKeyDesc_Files_FileTree = "<leader>ft file-tree"
 nnoremap <leader>ft    :action ActivateProjectToolWindow<CR>
 vnoremap <leader>ft    :action ActivateProjectToolWindow<CR>
 
-""" Yank/Copy Submenu ---------------------------------
 let g:WhichKeyDesc_Files_YankCopy = "<leader>fy +Yank/Copy"
+""" Yank/Copy Submenu ---------------------------------
+
+let g:WhichKeyDesc_Files_YankCopy_ReferencePath = "<leader>fyr ref-path"
+nnoremap <leader>fyr    :action CopyReference<CR>
+vnoremap <leader>fyr    :action CopyReference<CR>
+
+let g:WhichKeyDesc_Files_YankCopy_SourceRootFilePath = "<leader>fys src-path"
+nnoremap <leader>fys    :action CopySourceRootPath<CR>
+vnoremap <leader>fys    :action CopySourceRootPath<CR>
 
 " Copy file path
-let g:WhichKeyDesc_Files_YankCopy_FilePath = "<leader>fyy file-path"
+let g:WhichKeyDesc_Files_YankCopy_FilePath = "<leader>fyy abs-path"
 nnoremap <leader>fyy    :action CopyAbsolutePath<CR>
 vnoremap <leader>fyy    :action CopyAbsolutePath<CR>
 """ ---------------------------------------------------

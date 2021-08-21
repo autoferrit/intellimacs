@@ -18,6 +18,16 @@ let g:WhichKeyDesc_GitVcs_Push = "<leader>gp push"
 nnoremap <leader>gp    :action Vcs.Push<cr>
 vnoremap <leader>gp    :action Vcs.Push<cr>
 
+" Vcs push (git pull)"
+let g:WhichKeyDesc_GitVcs_Pull = "<leader>gu pull"
+nnoremap <leader>gu    :action Vcs.Pull<cr>
+vnoremap <leader>gu    :action Vcs.Pull<cr>
+
+" Annotate. Show when each line was last edited and by whom.
+let g:WhichKeyDesc_GitVcs_Vcs_Annotate = "<leader>ga annotate"
+nnoremap <leader>ga    :action Annotate<CR>
+vnoremap <leader>ga    :action Annotate<CR>
+
 " Show shelf
 let g:WhichKeyDesc_GitVcs_Shelf = "<leader>gS shelf"
 nnoremap <leader>gS    :action Vcs.Show.Shelf<CR>

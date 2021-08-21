@@ -4,7 +4,7 @@ nnoremap <leader>ha    :actionlist<CR>
 vnoremap <leader>ha    <Esc>:actionlist<CR>
 
 " Show changes in current file
-let g:WhichKeyDesc_Help_ShowHistory = "<leader>hh show-history"
+let g:WhichKeyDesc_Help_ShowHistory = "<leader>hh local-changes"
 nnoremap <leader>hh    :action LocalHistory.ShowHistory<CR>
 vnoremap <leader>hh    :action LocalHistory.ShowHistory<CR>
 
