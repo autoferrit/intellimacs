@@ -3,7 +3,7 @@
 This file contains all available key bindings.
 They are divided into the three modules: spacemacs, major and extra.
 
-The spacemacs module key bindings are alligned with the spacemacs develop branch, because the
+The spacemacs module key bindings are aligned with the spacemacs develop branch, because the
 0.300 release is very near, but after that we plan to stay aligned with the
 master branch.
 
@@ -97,7 +97,7 @@ master branch.
 | ~SPC f f~   | Find files            |
 | ~SPC f g~   | Search in project     |
 | ~SPC f R~   | Rename file           |
-| ~SPC f r~   | Recent fles           |
+| ~SPC f r~   | Recent files          |
 | ~SPC f S~   | Save all files        |
 | ~SPC f s~   | Save file             |
 | ~SPC f t~   | Project window        |
